@@ -18,8 +18,13 @@ public class Calculator implements Adder, Subtractor, Multiplier, Division {
 
 	@Override
 	public long multiply(long... ls) {
-		// TODO Auto-generated method stub
-		return 0;
+		long result = ls[0];
+		
+		for(int i = 1; i < ls.length; i++) {
+			result *= ls[i];
+		}
+		
+		return result;
 	}
 
 	@Override
